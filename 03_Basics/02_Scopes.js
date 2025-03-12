@@ -28,23 +28,23 @@
 //         const website="youtube"
 //         console.log(username);
 //     }
-// //  console.log(website);     ye error dega
+//     // console.log(website);    // ye error dega
 //     two()
 // }
 // one()
 //upar ye note karna ki jab function call hoga tabhi wo chalega
 
 
-if(true){
-    const username="hitesh"
-    if(username=="hitesh")
-    {
-        const website="youtube"
-        console.log(username+website);
-    }
-    // console.log(website);   //ye error dega because scope website ka scope yaha nahi hai
-}
-// console.log(username)       ye error dega because scope username ka scope yaha nahi hai
+// if(true){
+//     const username="hitesh"
+//     if(username=="hitesh")
+//     {
+//         const website="youtube"
+//         console.log(username+website);
+//     }
+//     // console.log(website);   //ye error dega because scope website ka scope yaha nahi hai
+// }
+// console.log(username)      // ye error dega because scope username ka scope yaha nahi hai
 
 // ++++++++++++++++++++++++++++interesting++++++++++++++++++++
 

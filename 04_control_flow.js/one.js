@@ -14,7 +14,7 @@
 // {
 //     console.log("executed")
 // }
-//<,>,<=,>=,==,!=,===,!==
+// //<,>,<=,>=,==,!=,===,!==
 // if(2==="2")   
 // {
 //     console.log("executed")
@@ -48,13 +48,13 @@
 
 
 
-const userloggedIn=true
-const debitCard=true
-const loggedInFromGoogle=false
-const loggedInFromEmail=true
-if(userloggedIn && debitCard && 2==3){
-    console.log("allow to buuy course");
-}
-if(loggedInFromEmail || loggedInFromGoogle){
-    console.log("user logged in");
-}
+// const userloggedIn=true
+// const debitCard=true
+// const loggedInFromGoogle=false
+// const loggedInFromEmail=true
+// if(userloggedIn && debitCard && 2==3){
+//     console.log("allow to buuy course");
+// }
+// if(loggedInFromEmail || loggedInFromGoogle){
+//     console.log("user logged in");
+// }

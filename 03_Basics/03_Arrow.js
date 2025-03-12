@@ -1,11 +1,11 @@
-const user={
-    username:"hitesh",
-    price:999,
-    welcomeMessage:function(){
-        console.log(`${this.username},welcome to website`);  //this is block ke values ko use karne ke liye kaam aayega current context ko refer karega
-        console.log(this)
-    }
-}
+// const user={
+//     username:"hitesh",
+//     price:999,
+//     welcomeMessage:function(){
+//         console.log(`${this.username},welcome to website`);  //this is block ke values ko use karne ke liye kaam aayega current context ko refer karega
+//         console.log(this)
+//     }
+// }
 // user.welcomeMessage()
 // user.username="sam"
 // user.welcomeMessage()
