@@ -3,10 +3,11 @@
 // console.log(balance);          //ye 3 line ko console me likh ke ke prototype me functions dekh lo
 // console.log(typeof(balance));
 // console.log(balance.toString);   //ye rahega 100 hi par data  string ban gay toh string ke functions ka use ho sakta hai
+// console.log(typeof balance)
 // console.log(balance.toFixed(2));   //decimal ke baad kitne digits tak no chaiyea
 
 // const otherNumber =123.8966
-// console.log(otherNumber.toPrecision(3));
+// console.log(otherNumber.toPrecision(3));   //precision mtlb total kitne digits chaiyea rounding ke baad
 // console.log(otherNumber.toPrecision(4));
 // console.log(otherNumber.toPrecision(5));
 // console.log(otherNumber.toPrecision(2));
@@ -28,8 +29,8 @@
 // console.log(Math.round(4.6));
 // console.log(Math.ceil(4.6));
 // console.log(Math.floor(4.6));
-console.log(Math.min(4,5,7,6));
-console.log(Math.max(4,5,7,6));
+// console.log(Math.min(4,5,7,6));
+// console.log(Math.max(4,5,7,6));
 
 console.log(Math.random());      //0 aur 1 ke beech me values return karega
 console.log((Math.random()*10)+1);   // aur bade na ki value return karega  min value yaha one hogi

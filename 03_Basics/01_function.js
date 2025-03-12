@@ -64,7 +64,7 @@
 // console.log(loginUserMessage() ) 
 
 // function loginUserMessage(username="sam")       
-// //agar kuch nahi pass kiya toh sam just logged in print hoga agar kuch pass kiys toh overwrite ho jayega
+// agar kuch nahi pass kiya toh sam just logged in print hoga agar kuch pass kiya toh overwrite ho jayega
 // {
 //     if(!username){
 //         console.log("enter username")
@@ -78,8 +78,8 @@
 
 // function calculateCartPrice(...num1)      //...ko hi rest operator aur spread operator bolate hai bas unke usecase pe depend karta hai ki rest use ho raha ki spread 
 // {
-//     return num1                           //abhi ye teen dots resp operator ki tarah kaam karengi aur hum function ke andar multiple values pass kar payenge 
-// }                                         //aur num1 me un saare elements ki ek arrray ban ake store ho jayegi aur sum ke liye array ka sum kar do
+//     return num1                           //abhi ye teen dots rest operator ki tarah kaam karengi aur hum function ke andar multiple values pass kar payenge 
+// }                                         //aur num1 me un saare elements ki ek array ban ake store ho jayegi aur sum ke liye array ka sum kar do
 // console.log(calculateCartPrice(222,400,300))
 
 

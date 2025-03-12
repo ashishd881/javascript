@@ -9,6 +9,6 @@ accountEmail="hc@hc.com"
 accountPassword="156234"
 accountCity="Banglore"
 
-console.log(accountId); //log likh ke enter mar do
+console.log(accountId,accountEmail); //log likh ke enter mar do
 
-console.table([accountId,accountEmail,accountCity,accountState]) //saare variables ko ek saath print kar deta hai 
+console.table([accountId,accountEmail,accountCity,accountState]) //saare variables ko ek saath print kar deta hai table ke form me

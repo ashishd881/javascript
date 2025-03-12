@@ -1,10 +1,10 @@
-// const tinderuser =new Object()     //single ton object which is empty
-// const tinderuser1={}                 //not a singleton object but is empty
+const tinderuser =new Object()     //single ton object which is empty
+const tinderuser1={}                 //not a singleton object but is empty
 // console.log(tinderuser)
 
-// tinderuser.id="123abc"
-// tinderuser.name="sammu"
-// tinderuser.isLoggedIn=false
+tinderuser.id="123abc"
+tinderuser.name="sammu"
+tinderuser.isLoggedIn=false
 // console.log(tinderuser)
 
 
@@ -24,7 +24,7 @@
 // const obj2={3:"a",4:"b"}
 // const obj4={5:"c",6:"f"}
 
-// const obj3={obj1,obj2}    //object ke andar object aa jayega
+// // const obj3={obj1,obj2}    //object ke andar object aa jayega isme obj1, obj2 likh ke aata hai niche wale me nahi aayega
 // const obj3=Object.assign({},obj1,obj2)  //empty parenthesis is a optional parameter
 // const obj5=Object.assign({},obj1,obj2,obj4)
 // console.log(obj3);           //control +l se line select hogi
@@ -33,38 +33,38 @@
 // const obj6={...obj1,...obj2,...obj4}   //spread kar diya
 // console.log(obj6);
 
-// const users=[
-//     {
-//         id:1,
-//         email:"h@gmail.com"
-//     },
-//     {
-//         id:1,
-//         email:"h@gmail.com"
-//     },
-//     {
-//         id:1,
-//         email:"h@gmail.com"
-//     },
-// ]
-// users[1].email    //phale email aa jayega
+const users=[
+    {
+        id:1,
+        email:"h@gmail.com"
+    },
+    {
+        id:1,
+        email:"h@gmail.com"
+    },
+    {
+        id:1,
+        email:"h@gmail.com"
+    },
+]
+// console.log(users[1].email )   //phale email aa jayega
 // console.log(tinderuser);
-// console.log(Object.keys(tinderuser));     //sari keys ko liya aur array me bana diya
+// console.log(Object.keys(tinderuser));     // tinderuser ki sari keys ko liya aur array me bana diya
 
-// console.log(Object.values(tinderuser));
+// console.log(Object.values(tinderuser));    //tinderuser ki sari values ko liya aur array me bana diya
 // console.log(Object.entries(tinderuser));
 
-// console.log(tinderuser.hasOwnProperty('isLoggedIn'));   //hum check kar rahe hai ki isLoggedIn hai ki nahi nahi toh crash ho sakta hai
+console.log(tinderuser.hasOwnProperty('isLoggedIn'));   //hum check kar rahe hai ki isLoggedIn hai ki nahi nahi toh crash ho sakta hai
 
 
 
 
-const course={
-    coursename:"js in hindi",
-    price:"999",
-    courseInstructor:"hitesh"
+// const course={
+//     coursename:"js in hindi",
+//     price:"999",
+//     courseInstructor:"hitesh"
 
-}
+// }
 // console.log(course.courseInstructor)       //alternative for this is written below
 
 //destructuring of values
@@ -72,8 +72,8 @@ const course={
 // const {courseInstructor}=course         //curly braces ka use kar ke destructuring ki jaa rahi hai react me bhi hota hai ye
 // console.log(courseInstructor);   //ab course. kar ke likhne ki zarurat nahi hai
 
-const {courseInstructor:instructor}=course    //agar courseInstructor bada naam lag raha hai toh usko chota naam de diya instructor
-console.log(instructor)
+// const {courseInstructor:instructor}=course    //agar courseInstructor bada naam lag raha hai toh usko chota naam de diya instructor
+// console.log(instructor)
 
 
 // {

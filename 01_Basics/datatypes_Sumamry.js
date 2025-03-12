@@ -15,7 +15,7 @@
 // const id=Symbol('123')
 // const anotherid=Symbol('123')
 // console.log(id==anotherid)
-// console.log(id===anotherid)
+// console.log(id===anotherid)    //both are false because symbols are always unique
 
 // const bigNumber=2345678945454555
 // //Reference (non primitive)-Array,Object,Functions
@@ -25,15 +25,16 @@
 //     name:"hitesh",
 //     age:22
 // }
-// const myFunction =function(){
+// console.log(typeof (heros));   //
+// console.log(typeof (myOnj));
 
-//     console.log("hello world");
-// }
-// console.log(typeof outsideTemp)    //object
-// console.log(typeof userEmail)
-// console.log(typeof anotherid)
-// console.log(typeof bigNumber)
-// console.log(typeof heros)         //non primitive hai toh type of object bateyega
+
+const myFunction =function(){
+
+    console.log("hello world");
+}
+
+// console.log(typeof heros)         //non primitive hai toh type of object bateyega  object because array is a type of object
 // console.log(typeof myOnj)         //non primitive hai toh type of object bateyega
 // console.log(typeof myFunction  )  //non primitive hai toh type of  object function bateyega
 
@@ -46,7 +47,7 @@
 // let anothername=myytname
 // console.log(anothername);
 
-// anothername="chaiaurcode"   //yaha chane karne se myytname me change nahi hoga because another name ko myytname ka ek copy diya gaya hai
+// anothername="chaiaurcode"   //yaha change karne se myytname me change nahi hoga because another name ko myytname ka ek copy diya gaya hai
 
 // console.log(anothername);
 // console.log(myytname);

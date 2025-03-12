@@ -8,11 +8,18 @@
 
 // console.log(typeof (valueINNumber));   //ye no dega
 
-// let score1="33abc"
+// let score1="abc"
 // console.log(typeof score1);
 // let valueINNumber1 =Number(score1);
-// console.log(typeof (valueINNumber1));    //score1 ko number me convert kiya isliye no bata diya
+//  console.log(typeof (valueINNumber1));    //score1 ko number me convert kiya isliye no bata diya
 // console.log (valueINNumber1);      //nan ho gay par convert ho gaya score number me 
+
+let score1=22
+console.log(typeof score1);
+let valueINNumber1 =String(score1);
+ console.log(typeof (valueINNumber1));      //string me convert ho gaya par value utni hi rahegi 22
+console.log (valueINNumber1);
+
 
 // let score2=null
 // console.log(typeof score2);  //object
@@ -35,7 +42,7 @@
 //  let booleanIsLoggedIn2=Boolean(isloggedIn2)
 //  console.log(booleanIsLoggedIn2);   //true dega string
 
-let somenumber=33
-let stringNumber = String(somenumber)
-console.log(stringNumber);   //dikhega no jaisa
-console.log(typeof(stringNumber));  //par yaha string print hoga kyunki convertr ho gaya
+// let somenumber=33
+// let stringNumber = String(somenumber)
+// console.log(stringNumber);   //dikhega no jaisa
+// console.log(typeof(stringNumber));  //par yaha string print hoga kyunki convertr ho gaya

@@ -29,7 +29,7 @@ const JsUser={            //keys bhi de sakte hai name,age ki jagha
 
 // console.log(JsUser[mySym])
 // console.log(typeof JsUser[mySym])   //correct way to get mySym values  type of yaha bhi string hi hoga typeof
-                                    //sumbol tab hoga jab symbol ki tarah mysym ko symbol banaya jaye
+//                                     // sumbol tab hoga jab symbol ki tarah mysym ko symbol banaya jaye jaise upar banaya gaya hai
 
 // JsUser.email="hitesh@microsoft.com"
 // console.log(JsUser)
@@ -38,13 +38,13 @@ const JsUser={            //keys bhi de sakte hai name,age ki jagha
 // JsUser.email="hitesh@yahoo.com"
 // console.log(JsUser)     //humne mySym ko sumboll banaya tha toh wo symbol (key1) ki tarah print ho raha hai
 
-JsUser.greeting =function(){
+JsUser.greeting =function(){                     //js user me is se function add ho jayega bina argument wala hai ye
     console.log("hello js user")
 }
 // console.log(JsUser.greeting)    //function anonymus function return back  aa gaya
-console.log(JsUser.greeting())
+console.log(JsUser.greeting())   //sahi tarika hai ye function acces karne ka
 
 JsUser.greetingTwo =function(){
-    console.log(`hello js user,${this.name}`)    //back ticks laga ke hum interpolation kar rahe hai this pointer se JsUser ke name ko reffer kar rahe hai
+    console.log(`hello js user,${this.name}`)    //back ticks laga ke hum interpolation kar rahe hai this pointer se JsUser ke name ko refer kar rahe hai
 }
 console.log(JsUser.greetingTwo())             //output me undefined dikh rha hai uske baare me aage baat karenge
