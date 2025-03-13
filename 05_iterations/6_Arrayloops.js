@@ -1,9 +1,9 @@
-const coding =["js","ruby","java","python","cpp"]
+// const coding =["js","ruby","java","python","cpp"]
 
 // coding.forEach((item)=>{
 //     console.log(item);
-//    
-// })
+   
+// });
 
 // const values=coding.forEach((item)=>{
 //     console.log(item);
@@ -56,13 +56,13 @@ const books = [
   ];
 
   let userBooks=books.filter((bk)=> bk.genre==='History')
-  //console.log(userBooks)
+  console.log(userBooks)
 
-//   userBooks=books.filter((bk)=> {bk.publish >= 2000})
-//   console.log(userBooks)      //iska output kuch nahi aa raha h because hum ne scope open kar liya hai to return karna hoga
+  userBooks=books.filter((bk)=> {bk.publish >= 2000})
+  console.log(userBooks)      //iska output kuch nahi aa raha h because hum ne scope open kar liya hai to return karna hoga
 
-// userBooks=books.filter((bk)=> {return bk.publish >= 2000})
-//   console.log(userBooks)
+  userBooks=books.filter((bk)=> {return bk.publish >= 2000})
+  console.log(userBooks)
 
 
 userBooks=books.filter((bk)=> {

@@ -7,7 +7,7 @@ const coding =["js","ruby","java","python","cpp"]   //console me ja ke isko likh
 //     console.log(val) 
 // } ) 
 
-// coding.forEach((item) =>{            //arrow function se naam hata do callback function ban gaya 
+// coding.forEach((item) =>{            //arrow function se naam hata do aur equal to bhi hatna hoga callback function ban gaya 
 //     console.log(item);
 // })
 
@@ -17,9 +17,9 @@ const coding =["js","ruby","java","python","cpp"]   //console me ja ke isko likh
 
 // coding.forEach(printMe)
 
-coding.forEach( (item,index,arr) => {
-    console.log(item,index,arr)        //badhiya output de raha hai
-})
+// coding.forEach( (item,index,arr) => {
+//     console.log(item,index,arr)        //badhiya output de raha hai
+// })
 
 const myCoding=[
     {
