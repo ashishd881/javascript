@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("python")         //jitni baar ye function call hoga utni baar DOM ki tree end tak traverse hogi so optimization is poor in this case
+    addLanguage("typescript")
+
+    function addOptiLanguage(langName){
+        const li=document.createElement('li')
+        const addText=document.createTextNode(langName);
+        li.appendChild(addText)
+        document.querySelector('.language').appendChild(li);   //this is a optimmized way to add language
+    }
+    addOptiLanguage('goLang');
+
+    //Edit karni hai  koi value
+    const secondLang=document.querySelector("li:nth-child(2)")  //li ki 2 child select hoga ie python
+    // secondLang.innerHTML="mojo"
+    const newLi=document.createElement('li')    //naya element bana ke replace kar diya
+    newLi.textContent ="Mojo"
+    secondLang.replaceWith(newLi)
+
+
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>TypeScript</li>'
+
+    //remove
+    const lastLang =document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
