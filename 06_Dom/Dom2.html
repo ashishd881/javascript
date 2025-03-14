@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | code</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector('.parent')
+    // console.log(parent);
+    // // ye script ko dusre file me bhi likh sakte hai aur usko likhne ke baad jab console kholenge toh console me div dikh jayega
+    // console.log(parent.children);   //ye html collection ko return karega console me
+    // console.log(parent.children[1]);  //tuesday return karega
+
+    // console.log(parent.children[1].innerText);         //HTMLcollect me ye for loop lag jayega par foreach bina array me convert kiye nahi lag payega
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+        
+    // }
+    // parent.children[1].style.color="orange"
+    // console.log(parent.firstElementChild);      //monday print hona chaiyea tha pat anahi divday kyu print ho raha hai
+    // console.log(parent.lastElementChild);
+
+    // const dayOne=document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+    console.log("NODES:", parent.childNodes);       //nodeList return karega
+    
+    </script>
+</html>

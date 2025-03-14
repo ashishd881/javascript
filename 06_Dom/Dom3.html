@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    
+</body>
+<script>
+    //ek div element add kar ke html document bana rahe hai hum yaha par
+    const div = document.createElement('div')    //yaha pe h1 likha hai toh console me h1 elemt ban jayega
+    console.log(div);
+    div.className =  "main" ;             // ye hum div ke attributes set kar rahe hai 
+    div.id =Math.round(Math.random()*10+1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="green"
+    div.style.padding="12px"
+    // div.innerHTML="chai aur code"
+    const addText =document.createTextNode("chai aur code")  //ye dikhne lageag html document me
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+    // isko ek function me rakh ke iski values ko as an argument pass kar do aur element bante jayenge
+</script>
+</html>
