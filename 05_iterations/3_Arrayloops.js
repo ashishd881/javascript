@@ -4,7 +4,7 @@
 
 // const arr=[1,2,3,4,]
 // for (const element of arr){
-//     console.log(element)     //arr ke element pe for loop laga di
+//     console.log(element)     //arr ke element pe for of loop laga di
 // }
 
 // const greetings="Hello World!"

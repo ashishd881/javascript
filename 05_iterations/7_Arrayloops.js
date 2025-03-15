@@ -17,5 +17,5 @@ const myNumers =[1,2,3,4,5,6,7,8,9,10]
 const newNums= myNumers                                    //yaha pe hum chaining kar rahe hai first map se values second map me pass hongi ten multuply hone ke baad one add ho jayega
                         .map((num)=> num*10)
                         .map((num)=> num+1)
-                        .filter((num)=>num>=40)
+                        .filter((num)=>num>=40)           //filter 40 se badi values bas ko print kar dega
 console.log(newNums);
