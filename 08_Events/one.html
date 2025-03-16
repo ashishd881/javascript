@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                 src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+                alt="photoshop"></li>
+            <li><img width="200px" id="japan" 
+                src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+                alt=""></li>
+            <li><img width="200px" id="river"
+                 src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+                 alt=""></li>
+            <li><img width="200px" id="owl"
+                 src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+                  alt="" 
+                  
+                  >
+                </li>
+                <!--onclick yaha likhna is sa bad practice onclick="alert('owl')" niche hum java script me likhenge-->
+            <li><img width="200px" id="prayer" 
+                src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+                alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick =function(){     //ye hum ne id pe onclick event lagaya hai but this gives less feature 
+    //     alert("owl clicked")
+    // }
+
+    //best way is to use a event listner
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("owl clicked again")
+    // })             //eventlistner third parameter me by default false hi hota hai so no neeed to write it
+
+    //attachEvent()      used at the time of internet explorer
+    //jquery framework like react
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     //e yaha pe ek event object
+    //     console.log(e);   //see it in console
+    // },false)
+
+    //third parameter hai eventpropogation they are of two types eventbubbling=false which is default and eventcapturing=true
+    //events to be studied 
+    //type, timestamp,defaultprevented
+    //target ,toElement, srcElement,currentTarget,
+    //clientX, clientY,screenX,screenY
+    //altkey ,ctrKey ,shiftkey,keyCode
+
+    // yaha third parameter nahi hai mtlb by default ye false hoga toh yaha eventbubbling hoga toh owl me click karenge toh
+    // phale owl clicked print hoga phir clicked inside ul hoga in console because in bubbling niche se upar jata hai 
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside th ul")
+    // })
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     console.log("owl clicked")
+    // })
+
+    // yaha dono me true likha hai so yyaha pe eventcapturing hoga phale clicked on ul chalega phir owl cliked upar se niche chalega eventcapturing 
+    //ye sab tabhi hoga jab hum owl pe clock karenge because owl pe eventlistner laga hai aur owl ul ka part hai
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside th ul")
+    // },true)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked")
+    // },true)
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside th ul")
+    // })
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked")
+    //     e.stopPropagation()     //ab event bubbling niche se upar nahi jayegi 
+    // })
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault()                       //is se hum google ki website pe nahi jayenge
+    //     e.stopPropagation()                       //jab upar wale code me comment nahi hai toh bubbling hogi niche se upar so isko likhne wo bhi prevent ho jayga 
+    //     console.log("google clicked")
+    // },false)
+
+
+
+
+//*************************************************
+//we need to do a task to hide the clicked image
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e)        //pointer event dikhega consoleme
+        // console.log(e.target)     //kis target se image mil rahi hai
+        // console.log(e.target.parentNode)    //jis image me click karene uska li show ho jayega console me
+        // let removeit =e.target.parentNode
+        // removeit.remove();             //jis jis pe click karte jaoge wo mremove hoti jayegi
+        // par agar hum li me click kar rahe hai toh pura ul hi chala ja raha haiso we use other method
+
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG')
+        {
+            console.log(e.target.id);
+            let removeit =e.target.parentNode
+            removeit.remove(); 
+
+        }
+
+        // removeit.parentNode.removeChild(removeit);   this is a another method to remove
+    })
+
+</script>
+</html>
