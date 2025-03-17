@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">Stop</button>
+    <button id="start">STart</button>
+
+</body>
+<script>
+    // setInterval(function(){               //call back aur timeout arguments hai
+    //     console.log("hitesh",Date.now())             //har ek second ek baad hitesh print hota rahega
+    // },1000)
+
+    const sayDate = function(str){               //call back aur timeout arguments hai
+        console.log(str,Date.now())             //har ek second ek baad hitesh print hota rahega
+    }
+    // setInterval(sayDate,1000,"hi")   //iska third parameter set date ke function ke liye argument ka akaam karega
+
+    // setInterval ko rokene ke liye clear interval 
+    const IntervalId=setInterval(sayDate,1000,"hi")
+    clearInterval(IntervalId)
+
+</script>
+</html>

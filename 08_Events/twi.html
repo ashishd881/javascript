@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("hitesh");
+        
+    // },2000)                        //this method call a api you get this when you write window on console it is not specific to javasccript
+                                                    //argument me callback denge ie bina naam wala function aur time in milliseconds
+                                     //2 second baad console me hitesh print ho jayga par sirf ek hi baar
+    const sayHitesh = function(){
+        console.log("hitesh");   
+    }
+    setTimeout(sayHitesh,2000)          //function ka reference diya hai because settimeout me handler dalte hai
+   
+
+    const changeText =function(){
+        document.querySelector('h1').innerHTML="best js series"
+    }
+    // setTimeout(changeText,2000)
+    //         //elements/output me 2 second baad text change ho jayega
+    //                  //clear timeout settime out ko rokne ke liye use kiya jayega agar stop me click kar diya toh settimeout nahi chalega
+    
+    const changeMe=setTimeout(changeText,2000)
+    document.querySelector('stop').addEventListener('click',function(){
+        clearTimeout(changeMe)             //jis timeout ko hatana hai uska refrence de diya
+        console.log("stopped")
+    })
+
+
+
+
+
+    </script>
+</html>
