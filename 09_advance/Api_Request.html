@@ -1,0 +1,34 @@
+<!--api request fetch se phale xml http request bejhte the see md doc -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey;"> 
+    <p>bhaut sare engines hote hai javascript ko run karane ke liye usme se ek hai v8 engine ki repository available github me
+        javascroipt bhi chalti c++ engine me hi usme source ke andar joge toh apis hi jo c++ aur javascript ke beech me kaam karti hai source ke d8 me jo d8 d8-console.cc hai yaha se console.log
+        aata hai 
+    </p>
+</body>
+<script>
+    // xml request ajax ke madat se banti ahi
+    const requestURL="https://api.github.com/users/ashishd881"
+   const xhr = new XMLHttpRequest() ;                           //is class se objecct bana rahe hai new ka use kar ke
+    xhr.open('GET',requestURL) 
+    console.log("here")                     //2 paremeter method like get, post,put ie type of request or url
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers)           //ye undefined aa raha hai because data ka type of string hai data api se sting ke form me aayega toh sting me convert kar do usi tarah hum json me bhi convert kar sakte hai
+        }
+    }
+    console.log("Sending API request...");
+    xhr.send();
+
+   </script>
+</html>
